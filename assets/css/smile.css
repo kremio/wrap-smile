@@ -1,0 +1,8 @@
+video.flash{
+  transition: opacity 250ms;
+  opacity:0;
+}
+
+video.snap{
+  opacity:1;
+}
