@@ -2,12 +2,32 @@
 <head>
 <link rel="stylesheet" href="<%= wrapBaseURL %>/assets/css/smile.css">
 <title>Smile Wrap</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="<%= wrapBaseURL %>/assets/js/libs/modernizr.js"></script>
-<script src="<%= wrapBaseURL %>/assets/js/smile.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script> -->
+<!-- <script src="<%= wrapBaseURL %>/assets/js/libs/modernizr.js"></script> -->
+<!-- <script src="<%= wrapBaseURL %>/assets/js/smile.js"></script> -->
+<script>
+  var require = {
+    baseUrl: '<%= wrapBaseURL %>/assets/js/',
+    paths:{
+      'text':'/js/text',
+      'image':'/js/image',
+      'jquery':'//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min',
+      'modernizr':'libs/modernizr'
+    },
+    shim:{
+           'jquery':{
+            exports: '$'
+           },
+           'modernizr':{
+            exports: 'Modernizr'
+           }
+    }
+  };
+</script>
+<script data-main="smile" src="/js/require.js"></script>
 </head>
 <body>
- <h1>Give us your nicest, biggest smile to get your gift!</h1>
+<h1><%= wrapData.recipient %>, give <%= wrapData.sender %> your nicest, biggest smile to get your gift!</h1>
   <div id="actionArea">
   </div>
 
