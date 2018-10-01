@@ -3,7 +3,7 @@ wrap-smile
 Instalation:
 
 1) Install opencv
-2)Get pkg-config : http://macpkg.sourceforge.net/
+2) Get pkg-config : http://macpkg.sourceforge.net/
 3) Add pkg-config to PATH
 4) Add path to folder containing opencv.pc to PKG_CONFIG_PATH
 ex:
