@@ -1,6 +1,6 @@
 wrap-smile
 ==========
-Instalation:
+Installation:
 
 1) Install opencv
 2) Get pkg-config : http://macpkg.sourceforge.net/
