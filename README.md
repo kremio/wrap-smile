@@ -8,5 +8,4 @@ Instalation:
 4) Add path to folder containing opencv.pc to PKG_CONFIG_PATH  
    ex:  
    `export PKG_CONFIG_PATH=/Volumes/Slowee/Users/Jonsku/temp/opencv-2.4.10/build/unix-install`
-5) Run
-> npm install
+5) Run `npm install`
